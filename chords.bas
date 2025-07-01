@@ -23,20 +23,21 @@
 	o$ = "E F F#G G#A A#B C C#D D#E F F#G G#A A#B C C#D D# E "
 
 	' Define intervals and chord qualities
-	dim i$(8), q$(8)
-	for i = 1 to 8
+	dim i$(9), q$(9)
+	for i = 1 to 9
 		read i$(i), q$(i)
 	next i
 
 	' Semitone intervals / Chord qualities
-	data "047", " "		' major
-	data "037", "m"		' minor
-	data "047A", "7"	' seventh
 	data "037A", "m7"	' minor seventh
+	data "047A", "7"	' seventh
 	data "047B", "maj7"	' major seventh
 	data "057A", "7sus4"	' seventh suspended 4th
-	data "057",  "sus4"	' suspended 4nd (sometimes written just "sus")
 	data "027",  "sus2"	' suspended 2nd
+	data "037",  "m"	' minor
+	data "047",  " "	' major
+	data "04A",  "7"	' seventh (partial match)
+	data "057",  "sus4"	' suspended 4nd (sometimes written just "sus")
 
 	' User input
 10	print
@@ -115,7 +116,7 @@
 
 		' Now, which chord is that?
 		q$ = ""
-		for k = 1 to 8
+		for k = 1 to 9
 			if i$(k) = i$ then
 				q$ = q$(k)
 			end if

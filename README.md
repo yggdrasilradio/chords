@@ -8,3 +8,4 @@ sensible, legal BASIC for the Coco3.  See my [preprocessor](https://github.com/y
 
 Look in the [redistribute](https://github.com/yggdrasilradio/chords/tree/master/redistribute) folder for the program in normal DECB ASCII format.
 
+This is a work in progress.

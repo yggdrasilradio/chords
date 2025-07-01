@@ -46,7 +46,15 @@
 
 	' Display chord diagram
 	print
-	print "E  A  D  G  B  A"
+	for i = 1 to 6
+		if mid$(a$, i, 1) = "X" then
+			print "X";
+		else
+			print " ";
+		end if
+		print "  ";
+	next i
+	print
 	print "+--+--+--+--+--+"
 	for i = 1 to 5
 

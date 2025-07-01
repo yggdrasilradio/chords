@@ -29,8 +29,8 @@
 	next i
 
 	' Semitone intervals / Chord qualities
-	data "047",  ""		' major
-	data "037",  "m"	' minor
+	data "047", " "		' major
+	data "037", "m"		' minor
 	data "047A", "7"	' seventh
 	data "037A", "m7"	' minor seventh
 	data "047B", "maj7"	' major seventh
@@ -42,7 +42,6 @@
 10	print
 	print "Chord";
 	input a$
-	'a$ = "022100"
 
 	' Display chord diagram
 	print

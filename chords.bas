@@ -2,7 +2,7 @@
 	' Init display
 	width 80
 	palette 0, 0  	' black background
-	palette 9, 27	' cyan text
+	palette 8, 27	' cyan text
 
 	' Reset machine on BREAK
 	on brk goto 3000
